@@ -33,6 +33,7 @@ RL_POST_TRAIN_CONFIG_MAP = {
     "open_rs3_drgrpo_ablation": "knoveleng/open-rs",
     "open_rs3_format_ablation": "knoveleng/open-rs",
     "open_rs3_long_completion_ablation": "knoveleng/open-rs",
+    "hendrycks_math": "EleutherAI/hendrycks_math", # MATH dataset
 
     "openthoughts3": "open-thoughts/OpenThoughts3-1.2M"
 }
