@@ -2,7 +2,7 @@
 
 import json
 from pathlib import Path
-from datasets.loader import load_normalized
+from mira_datasets.loader import load_normalized
 import utils.config
 
 
@@ -30,7 +30,7 @@ def main():
                     for i in range(min(3, size)):
                         f.write(json.dumps(split_data[i], ensure_ascii=False) + "\n")
                 
-                print(f"    → Preview written to {preview}")
+                print(f"    -> Preview written to {preview}")
         
         except Exception as e:
             print(f"  ERROR: {type(e).__name__}: {e}")
@@ -43,3 +43,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

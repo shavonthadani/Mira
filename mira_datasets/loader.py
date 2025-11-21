@@ -46,3 +46,4 @@ def load_normalized(name: str) -> DatasetDict:
         result[split] = dataset_dict[split].map(norm, remove_columns=dataset_dict[split].column_names)
     
     return DatasetDict(result)
+
